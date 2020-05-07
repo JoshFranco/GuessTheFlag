@@ -81,14 +81,12 @@
 		DA0F2E162464C0CB0057D10F /* GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
+				DA0F2E3E2464C5990057D10F /* Resources */,
+				DA0F2E3D2464C58E0057D10F /* DataLayer */,
+				DA0F2E3C2464C57C0057D10F /* ViewLayer */,
 				DA0F2E172464C0CB0057D10F /* AppDelegate.swift */,
 				DA0F2E192464C0CB0057D10F /* SceneDelegate.swift */,
-				DA0F2E1E2464C0CB0057D10F /* ContentView.swift */,
-				DA0F2E202464C0CC0057D10F /* Assets.xcassets */,
-				DA0F2E252464C0CC0057D10F /* LaunchScreen.storyboard */,
 				DA0F2E282464C0CC0057D10F /* Info.plist */,
-				DA0F2E1B2464C0CB0057D10F /* GuessTheFlag.xcdatamodeld */,
-				DA0F2E222464C0CC0057D10F /* Preview Content */,
 			);
 			path = GuessTheFlag;
 			sourceTree = "<group>";
@@ -108,6 +106,32 @@
 				DA0F2E332464C0CC0057D10F /* Info.plist */,
 			);
 			path = GuessTheFlagTests;
+			sourceTree = "<group>";
+		};
+		DA0F2E3C2464C57C0057D10F /* ViewLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F2E1E2464C0CB0057D10F /* ContentView.swift */,
+				DA0F2E252464C0CC0057D10F /* LaunchScreen.storyboard */,
+			);
+			path = ViewLayer;
+			sourceTree = "<group>";
+		};
+		DA0F2E3D2464C58E0057D10F /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F2E1B2464C0CB0057D10F /* GuessTheFlag.xcdatamodeld */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		DA0F2E3E2464C5990057D10F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA0F2E222464C0CC0057D10F /* Preview Content */,
+				DA0F2E202464C0CC0057D10F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,7 +391,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GuessTheFlag/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GuessTheFlag/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GuessTheFlag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -386,7 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GuessTheFlag/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"GuessTheFlag/Resources/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GuessTheFlag/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
