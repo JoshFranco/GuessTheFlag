@@ -15,6 +15,8 @@
 		DA0F2E242464C0CC0057D10F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0F2E232464C0CC0057D10F /* Preview Assets.xcassets */; };
 		DA0F2E272464C0CC0057D10F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0F2E252464C0CC0057D10F /* LaunchScreen.storyboard */; };
 		DA0F2E322464C0CC0057D10F /* GuessTheFlagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA0F2E312464C0CC0057D10F /* GuessTheFlagTests.swift */; };
+		DA6471BE24673B9100DF931B /* FlatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6471BD24673B9100DF931B /* FlatImage.swift */; };
+		DA6471C124673C3C00DF931B /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6471C024673C3C00DF931B /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		DA0F2E2D2464C0CC0057D10F /* GuessTheFlagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuessTheFlagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0F2E312464C0CC0057D10F /* GuessTheFlagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheFlagTests.swift; sourceTree = "<group>"; };
 		DA0F2E332464C0CC0057D10F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA6471BD24673B9100DF931B /* FlatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatImage.swift; sourceTree = "<group>"; };
+		DA6471C024673C3C00DF931B /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		DA0F2E162464C0CB0057D10F /* GuessTheFlag */ = {
 			isa = PBXGroup;
 			children = (
+				DA6471BF24673C2900DF931B /* Extension */,
 				DA0F2E3E2464C5990057D10F /* Resources */,
 				DA0F2E3D2464C58E0057D10F /* DataLayer */,
 				DA0F2E3C2464C57C0057D10F /* ViewLayer */,
@@ -111,6 +116,7 @@
 		DA0F2E3C2464C57C0057D10F /* ViewLayer */ = {
 			isa = PBXGroup;
 			children = (
+				DA6471BC24673B7300DF931B /* ViewModifiers */,
 				DA0F2E1E2464C0CB0057D10F /* ContentView.swift */,
 				DA0F2E252464C0CC0057D10F /* LaunchScreen.storyboard */,
 			);
@@ -132,6 +138,22 @@
 				DA0F2E202464C0CC0057D10F /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA6471BC24673B7300DF931B /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				DA6471BD24673B9100DF931B /* FlatImage.swift */,
+			);
+			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		DA6471BF24673C2900DF931B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DA6471C024673C3C00DF931B /* View+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +259,9 @@
 			files = (
 				DA0F2E1D2464C0CB0057D10F /* GuessTheFlag.xcdatamodeld in Sources */,
 				DA0F2E182464C0CB0057D10F /* AppDelegate.swift in Sources */,
+				DA6471BE24673B9100DF931B /* FlatImage.swift in Sources */,
 				DA0F2E1F2464C0CB0057D10F /* ContentView.swift in Sources */,
+				DA6471C124673C3C00DF931B /* View+Extension.swift in Sources */,
 				DA0F2E1A2464C0CB0057D10F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
