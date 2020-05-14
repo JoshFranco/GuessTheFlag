@@ -16,3 +16,16 @@ struct FlatImage: ViewModifier {
             .shadow(color: .black, radius: 2)
     }
 }
+
+extension View {
+    func flatImageStyle() -> some View {
+        self.modifier(FlatImage())
+    }
+}
+
+struct FlatImage_Previews: PreviewProvider {
+    static var previews: some View {
+        Image("US")
+        .flatImageStyle()
+    }
+}
